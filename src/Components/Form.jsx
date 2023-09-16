@@ -18,7 +18,7 @@ const Form = () => {
   const onSubmitForm = (e) => {
     e.preventDefault();
     setForm(true)
-    if (user.name.trim().length > 5 && user.email) {
+    if (user.name.trim().length > 5 && user.email && regex.test(user.email)) {
       setUser(user)
       setError(false)
       console.log('El formulario se completo correctamente')
@@ -29,8 +29,8 @@ const Form = () => {
   }
 
   return (
-    <div className={state.theme ? 'dark' : ''}>
-      <form onSubmit={onSubmitForm}>
+    <div>
+      <form onSubmit={onSubmitForm} className={state.theme ? 'dark' : ''}>
         <label>Please enter your name</label>
         <input type="text" onChange={(event) => setUser({...user, name: event.target.value})}/>
         <label>Please enter your email</label>

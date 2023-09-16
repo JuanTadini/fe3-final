@@ -10,8 +10,10 @@ const Contact = () => {
 
   return (
     <div className={state.theme ? 'dark' : ''}>
-      <h2>Want to know more?</h2>
-      <p>Send us your questions and we will contact you</p>
+      <section className='contact-text'>
+        <h2>Want to know more?</h2>
+        <p>Send us your questions and we will contact you</p>
+      </section>
       <Form/>
     </div>
   )

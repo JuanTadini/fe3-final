@@ -21,13 +21,33 @@ code {
 
 h1{
   text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+h2{
+  margin: 0;
+  padding: 2rem 0;
 }
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-around;
   padding: 1rem;
+}
+
+nav > .nav-buttons{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-buttons > button{
+  background-color: lightgrey;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 a{
@@ -42,22 +62,26 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
-  margin-top: 2rem;
   background-color: beige;
 }
 
-footer > img{
+.logo-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+footer > .logo-container > img{
   width: 200px;
   margin: 0;
 }
-footer > p{
+footer > .logo-container > p{
   margin: 0;
   padding-top: 0.7rem;
 }
@@ -67,8 +91,8 @@ form{
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
-  height: 100px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .card{
@@ -89,10 +113,10 @@ form{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 5vw;
 }
 
 table {
@@ -122,8 +146,16 @@ tr:nth-child(even) {
   color: white;
 }
 
-.icon-container {
+.icon-container{
   background-color: black;
   display: flex;
   padding: 3px;
+}
+
+.contact-text{
+  padding: 1rem 2rem;
+}
+
+.user-info{
+  padding: 1rem 2rem;
 }

@@ -12,8 +12,10 @@ const Footer = () => {
 
   return (
     <footer className={state.theme ? 'dark' : ''}>
-      <p>Powered by</p>
-      <img src={DHBanner} alt='DH-logo' />
+      <section className='logo-container'>
+        <p>Powered by</p>
+        <img src={DHBanner} alt='DH-logo' />
+      </section>
       <section className='icon-container'>
         <img src={facebook} alt="facebook logo" />
         <img src={instagram} alt="instagram logo" />
