@@ -34,6 +34,7 @@ nav{
   display: flex;
   justify-content: space-around;
   padding: 1rem;
+  background-color: beige;
 }
 
 nav > .nav-buttons{
@@ -149,7 +150,15 @@ tr:nth-child(even) {
 .icon-container{
   background-color: black;
   display: flex;
-  padding: 3px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7vw;
+  width: 200px;
+}
+
+.icon-container > img{
+  width: 35px;
+  height: 35px;
 }
 
 .contact-text{
